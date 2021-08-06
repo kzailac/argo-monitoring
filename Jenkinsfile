@@ -17,7 +17,10 @@ pipeline {
     
         stage ('Deploy Docs') {
             when {
-                changeset 'website/**'
+                anyOf {
+                    branch 'master'
+                    branch 'devel'
+                }
             }
             steps {
                 echo 'Publish argo-monitoring docs...'
