@@ -1,5 +1,5 @@
 ---
-id: trends-flapping
+sidebar_position: 2
 title: Status Trends - Flapping 
 ---
 
