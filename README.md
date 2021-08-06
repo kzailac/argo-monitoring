@@ -1,2 +1,3 @@
 # argo-monitoring
-The main repository to document the argo monitoring 
+
+This is the documentation repository of ARGO Monitoring. 
