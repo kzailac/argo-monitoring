@@ -58,8 +58,7 @@ module.exports = {
         },
         blog: {
           showReadingTime: true,
-          // Please change this to your repo.
-          editUrl: null,
+         
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
