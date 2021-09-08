@@ -10,6 +10,7 @@ ARGO Monitoring service analyzes the status timelines in different levels, detec
 
 ## Examples
 Flapping can occur due to network problems between monitoring host and monitored item for example:
+![](img/reports/status-trends-flapping-img1.png)
 
 ### Example 1: Flapping due to network issue
 ARGO Monitoring service monitors HTTP activity in host1.example.com using the check_http check. Due to network issues between the ARGO Monitoring service and host1.example.com a pattern arises that some http checks are successful (OK) and some are critical (CRITICAL) (in successive order) as shown in picture:
