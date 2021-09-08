@@ -24,6 +24,7 @@ State changes can occur due to network problems between monitoring host and moni
 
 ### Example 1: Counting CRITICAL,WARNING,UNKNOWN status daily appearance and duration
 We have a monitoring service that monitors HTTP activity in host2.example.com using the check_http probe. Due to network issues between monitoring box and host2.example.com we have a pattern that some HTTP checks are successful (**OK**) some are critical (**CRITICAL**), some are warning (**WARNING**) and some are unknown (**UNKNOWN**) as shown in picture:
+![](/img/reports/status-trends-flapping-img3.png)
 
 
 #### Result
