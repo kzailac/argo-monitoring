@@ -1,4 +1,3 @@
-
 ---
 sidebar_position: 3
 title: Status Trends - Critical, Warning,Unknown 
