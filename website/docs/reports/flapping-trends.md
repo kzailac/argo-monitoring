@@ -20,6 +20,7 @@ Based on this behaviour, during the data computations, the service is flagged as
 
 ### Example 2: Flapping due to internal problem of the service 
 ARGO Monitoring service monitors the file upload functionality in host2.example.com (object storage) using the file upload check. Due to an internal error of the service, the check uploads a file successfully (OK), then issues a deletion request on it but the deletion takes too long. In a second attempt to re-upload the file the check receives a warning (WARNING) until the deletion of the original is completed. This results in a repeating pattern of status being OK then WARNING, then again OK etc as shown in the following picture:
+![](/img/reports/status-trends-flapping-img2.png)
 
 #### Result
 Based on this behaviour, during the data computations, the service is flagged as a flapping service, and it is included in the list of flapping services presented in the ARGO Monitoring UI. 
