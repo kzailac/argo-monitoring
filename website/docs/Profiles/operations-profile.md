@@ -17,14 +17,14 @@ In principle these define how ANDing and ORing operations are performed between 
 The operations profile for AND operations is given in the following tabular:
 
 
-| **AND** | **OK** | **WARNING** | **UNKNOWN** | **MISSING** | **CRITICAL** | **DOWNTIMES** | 
+| **AND** | **OK** | **WARNING** | **UNKNOWN** | **MISSING** | **CRITICAL** | **DOWNTIME** | 
 | --- | --- |   --- | --- |  --- | --- | -- |
-| **OK** | OK | WARNING | UNKNOWN | MISSING | CRITICAL | DOWNTIMES |
-| **WARNING** | WARNING | UNKNOWN | MISSING | CRITICAL | DOWNTIMES |
-| **UNKNOWN** | UNKNOWN | UNKNOWN | MISSING | CRITICAL | DOWNTIMES |
-| **MISSING** | MISSING | MISSING | MISSING | CRITICAL | DOWNTIMES |
-| **CRITICAL** | CRITICAL | CRITICAL | CRITICAL | CRITICAL | DOWNTIMES |
-| **DOWNTIMES** | DOWNTIMES | DOWNTIMES | DOWNTIMES | DOWNTIMES | DOWNTIMES |
+| **OK** | OK | WARNING | UNKNOWN | MISSING | CRITICAL | DOWNTIME |
+| **WARNING** | WARNING | WARNING | UNKNOWN | MISSING | CRITICAL | DOWNTIME |
+| **UNKNOWN** | UNKNOWN | UNKNOWN | UNKNOWN | MISSING | CRITICAL | DOWNTIME |
+| **MISSING** | MISSING | MISSING | MISSING | MISSING | CRITICAL | DOWNTIME |
+| **CRITICAL** | CRITICAL | CRITICAL | CRITICAL | CRITICAL | CRITICAL | CRITICAL |
+| **DOWNTIME** | DOWNTIME | DOWNTIME | DOWNTIME | DOWNTIME |CRITICAL | DOWNTIME |
 
 As can be seen the most prominent status in the case of the “AND” operation is the CRITICAL, while the least prominent is the “OK” status. 
 
