@@ -15,11 +15,13 @@ The first step of calculations of the ARGO Monitoring service is concluding resu
 #### Example :  
 
 The metric check applies on a monitoring item with the following topology’s characteristics:
-`  "metric": "http.check",
+```
+  "metric": "http.check",
   "hostname": "host1.example.com",
   "service_type": "Web-Site",
   "group": "group1"
-`
+```
+
 The Metric Data records for this item could give information about the status as : 
 
 timestamp  | status
@@ -43,18 +45,27 @@ The ARGO Monitoring Service retrieves a Metric Profile report that defines the s
 #### Example :  
 
 Here are three  metric checks for the same host: 
-` "metric": "http.check",         
+
+```
+"metric": "http.check",         
 "hostname":"host1.example.com,
 "service_type": "Web-Site",
 "group": "group1" `
-` "metric": "http.download",
+```
+
+```
+"metric": "http.download",
 "hostname":"host1.example.com",
 "service_type":"Web-Site",
-"group": "group1"` 
-` "metric": "http.upload",
+"group": "group1"
+```
+
+```
+"metric": "http.upload",
 "hostname": "host1.example.com",
 "service_type": "Web-Site",
-"group": "group1" `
+"group": "group1"
+```
 
 But from the metric profile report only **http.download** and **http.upload** are defined. 
 As a result the ARGO Monitoring service will filter the Metric Data and will ignore the ones of the  **http.check** metric check. The timelines of **http.download** and **http.upload** will combine with each other and produce the timeline of the endpoint **host1.example.com**, as shown in picture: ![](/img/reports/endptimelines.png) 
