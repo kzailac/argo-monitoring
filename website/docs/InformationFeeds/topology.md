@@ -69,7 +69,6 @@ I have an organization , such as GRNET , which offers sites  such as HEBLAB ,IAS
 A visual representation of the above topology example can be represented from the image : 
 ![](/img/infofeeds/topology.png) 
 
-
 Monitoring Service supports topology information from various sources like
 DPMT
 GOCDB

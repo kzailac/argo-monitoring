@@ -26,6 +26,7 @@ The monitored item is part of a multi-leveled hierarchy , a.k.a topology. A topo
 The results of these daily checks a.k.a Metric Data, are ingested and stored in HDFS. Each Metric Data record includes information about the timestamp and the status of the monitored metric check ,  also information about the topology  and some extra information regarding the check .
 
 An example metric result in is shown below:
+```json
 {
   "timestamp": "2021-05-02T10:53:38Z",
   "metric": "http.check",
@@ -35,5 +36,5 @@ An example metric result in is shown below:
   "summary":""
   "description": ""
 }
-
+```
 ARGO Monitoring service using its analytics engine (a big data friendly platform), analyzes the stream of collected Metric Data, and is able to apply calculations on all the levels of the topology. It provides timeline results and availability/reliability results of the monitored item or a group of monitored items. 
