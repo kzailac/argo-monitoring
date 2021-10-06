@@ -1,5 +1,5 @@
 ---
-sidebar_position: 1
+sidebar_position: 2
 title: Guidelines for monitoring probes
 ---
 
@@ -110,7 +110,6 @@ Testing consists of the following steps:
 
 Deployment consists of the following steps:
 
-* ARGO in cooperation with the Service owner defines metric templates performed by the new probe in the POEM.
-* Service owner adds mappings between service flavours and metrics in the POEM.
+* ARGO in cooperation with the Service owner defines metric templates performed by the new probe in POEM.
+* ARGO in cooperation with the Service owner adds mappings between service flavours and metrics in POEM.
 * ARGO in cooperation with the Service owner follows project’s procedures for deployment to production.
-
