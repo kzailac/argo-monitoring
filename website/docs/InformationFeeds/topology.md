@@ -1,6 +1,6 @@
 ---
 sidebar_position: 2
-title:Topology 
+title: Topology 
 ---
 
 One of the main sources of truth used in the Monitoring Service is the topology. It helps to discover and map relationships between services / resources. Via the topology the owner may have in-depth visibility into the infrastructure, by enabling the Monitoring Service to categorize, classify, and finally monitor the services in it. 
