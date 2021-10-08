@@ -12,7 +12,7 @@ The calculations of the ARGO Monitoring service apply to all levels of the topol
 
 The first step of calculations of the ARGO Monitoring service is concluding results in the level of the metric checks. 
 
-#### Example :  
+#### Example:
 
 The metric check applies on a monitoring item with the following topology’s characteristics:
 ```
@@ -42,7 +42,7 @@ The timeline result would be as shown in picture: ![](/img/reports/metrictimelin
 The next level of the calculations is the endpoint level, producing results for a single host. A host includes multiple metric checks , so the Metric Data are grouped by the host. But not all metric checks of the host need to be included into the calculations. 
 The ARGO Monitoring Service retrieves a Metric Profile report that defines the significant metric check.The Metric Data are filtered based on the given information and computations apply only to the metric checks defined in the Metric Profile reports.  The Argo Monitoring service will combine the timelines of the metric checks and will combine the time interval and statuses into a new timeline.  In order to combine the different statuses of a time interval and conclude into one status the ARGO Monitoring service retrieves an Operation Profile that defines all the possible status combinations. As Operation Profile includes a defined operation with a truth table of possible status combinations, the ARGO Monitoring service retrieves the operation that corresponds to the endpoint level from the Aggregation Profile
 
-#### Example :  
+#### Example:  
 
 Here are three  metric checks for the same host: 
 
