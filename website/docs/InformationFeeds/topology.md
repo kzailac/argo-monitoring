@@ -19,12 +19,17 @@ The monitored infrastructure (group) , such as SITE or a PROJECT, can be part of
 * type , the type of the new level of hierarchy (e.x project) 
 * subgroup, the group endpoint that participates to the super group
 
+|                    	|                                                                                                                                                                                                             	|                                                                                                                             	|
+|--------------------	|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	|-----------------------------------------------------------------------------------------------------------------------------	|
+| **Grouping**       	| A way to organize and group the services <br>**SITE**  An organization responsible for the service <br>**PROJECT**  When you offer services on behalf of a project <br> **SERVICE GROUPS**  A group of related services 	| **SITE**  GRNET <br>**PROJECT**  MyProject <br>**SERVICE GROUP**  Cluster of databases                                              	|
+| **Service Type**   	| Each service type can have a defined sets of metrics, which are explicit tests when we check                                                                                                                	| repository                                                                                                                  	|
+| **Endpoint**       	| the combination of hostname and Service Type, defining where the service runs                                                                                                                               	| a repository at www.example-repository.com uses port 4333                                                                   	|
+| **Service actors** 	| the people responsible for the service operation                                                                                                                                                            	| Administrator : John Smith jsmith@grnet.gr <br>Site Owner: John Doe jDoe@grnet.gr <br>Security: George Papadopoulos jpapad@grnet.gr 	|
 
-So before we start with examples … 
-![](/img/infofeeds/topVocabulary.png) 
+### Examples
+Via a Topology the structure of  a Project , an Organization, a SITE, can be monitored. For example: 
+### Example 1: Monitoring the services of a Project- The topology:
 
-
-#### Example 1 - Monitoring the services of a Project- The topology: 
 A project gathers all the groups of services to offer,  to a higher level and creates one more level of hierarchy. Project acts as a supergroup,  at the top level of the infrastructure definition.  
 ```
 Project   
@@ -40,13 +45,14 @@ I have a project (MyProject)  which offers an AAI and a Document Management Serv
             |------aai1.myproject.org                                     |------database.myproject.org  
 ```
 
+### Example 2: Monitoring the services of 1 or more Organizations - The topology: 
 
-#### Example 2 - Monitoring the services of 1 or more Organizations - The topology: 
 ```
 ORGANIZATION 
         |---- SITE   
                    |---Group of services                 
                             |------Service Endpoints 
+
 ```
 
 
@@ -59,7 +65,7 @@ I have an organization , such as GRNET , which offers sites  such as HEBLAB ,IAS
 		       |-- grid02.physics.uoi.gr
 |---- IASA 
          |-- WEBDAV 
-               |-- se01.marie.hellasgrid.gr
+               |-- se01.marie.hellasgrid.
 |---- EKT
          |-- SRM 
                |-- se01.athena.hellasgrid.gr
@@ -68,6 +74,7 @@ I have an organization , such as GRNET , which offers sites  such as HEBLAB ,IAS
 
 A visual representation of the above topology example can be represented from the image : 
 ![](/img/infofeeds/topology.png) 
+
 
 Monitoring Service supports topology information from various sources like
 DPMT
