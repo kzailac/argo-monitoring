@@ -11,12 +11,12 @@ In many cases we need to provide results for top level items that are being moni
 
 - Service is deployed in a distributed fashion among hosts, so all of them are needed to be in a working state so as the service to be considered in working state. In this case we say that the timelines are combined in an “AND” fashion. E.g. if host1 = OK, host2 = CRITICAL the service offered will be CRITICAL (see figure 2)
 
-Figure 1:
+Figure 1: Service deployed in a high availability fashion
 ![](/img/profiles/service_example_ha.jpg)
 
-Figure 2:
+Figure 2: Service deployed in a distributed fashion
 ![](/img/profiles/service_example_hb.jpg)
-The operations profile for AND operations is given in the following tabular:
+
 
 ## The use of operation profiles
 
