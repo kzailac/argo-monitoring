@@ -33,11 +33,11 @@ But before we start lets explain a few acronyms.
 | **Endpoint**       	| the combination of hostname and Service Type, defining where the service runs                                                                                                                               	| a repository at www.example-repository.com uses port 4333                                                                   	|
 | **Service actors** 	| the people responsible for the service operation                                                                                                                                                            	| Administrator : John Smith jsmith [AT] grnet.gr <br />Site Owner: John Doe jDoe [AT] grnet.gr <br />Security: George Papadopoulos jpapad [AT]  grnet.gr 	|
 
-### Examples
+## Examples
 
 Via a Topology the structure of  a Project , an Organization, a SITE, can be monitored. For example: 
 
-#### Example 1: Monitoring the services of a Project- The topology:
+### Example 1: Monitoring the services of a Project- The topology:
 
 When we participate at a Project we offer a number of services. Based on this a project gathers the services to offer to a higher level and creates one more level of hierarchy. Project acts as a group, at the top level of the infrastructure definition.  
 
@@ -56,7 +56,7 @@ As an example, we may say that we have a project (MyProject) which offers an AAI
             |------aai1.myproject.org                  |------database.myproject.org  
 ```
 
-#### Example 2: Monitoring the services of 1 or more Organisations - The topology:
+### Example 2: Monitoring the services of 1 or more Organisations - The topology:
 
 Another way to organise the topology is to add a new layer of group which is the Organisations. An Organisation usually has a number of Sites where it hosts the services used by the users. In the following example the hierarchy of this type of topology is represented. 
 
