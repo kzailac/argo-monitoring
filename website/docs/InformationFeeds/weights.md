@@ -13,13 +13,34 @@ ARGO Monitoring Service takes into consideration the weights to combine top leve
 
 ## How can i define the weights
 
-A weight is 
+In ARGO we actually define sets of weights applied to top level items (as we've mentioned, those are groups that represent data centers, institutions etc..). The definition includes:
+- a name 
+- the type of top level group items that the weights are applied to
+- the type of weights (related to computational cores, benchmark scores, TFLOPS, storage capacity, etc...)
+- And the list of weighted items (tuples of item names along with the weight assigned to them which is usually a float number)
+
+The Json definition of a weight set is described in the example below:
 
 ```json
-"hostname": "www.grnet.gr",
-"service": "WEBSITE",
-"start_time": "2021-09-04T00:00:00Z",
-"end_time": "2021-09-04T23:59:00Z"
+{
+    "name": "Example_Weightset",
+    "weight_type": "HEPSPEC06_score",
+    "group_type": "DATACENTERS",
+    "groups": [
+        {
+            "name": "DC_01_AMSTERDAM",
+            "value": 12356.4
+        },
+        {
+            "name": "DC_02_LONDON",
+            "value": 16791.5
+        },
+        {
+            "name": "DC_03_FRANKFURT",
+            "value": 18791.5
+        }
+        ]
+}
  ```
 
 Monitoring Service has a number of connectors for setting the weights: 
