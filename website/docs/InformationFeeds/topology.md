@@ -19,7 +19,7 @@ The monitored infrastructure (group) , such as SITE or a PROJECT, can be part of
 * type , the type of the new level of hierarchy (e.x project) 
 * subgroup, the group endpoint that participates to the super group
 
-|                    	|                                                                                                                                                                                                             	|                                                                                                                             	|
+|       **Type**   |  **Description**    	|    **Example**         	|
 |--------------------	|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	|-----------------------------------------------------------------------------------------------------------------------------	|
 | **Grouping**       	| A way to organize and group the services <br />**SITE**  An organization responsible for the service <br />**PROJECT**  When you offer services on behalf of a project <br /> **SERVICE GROUPS**  A group of related services 	| **SITE**  GRNET <br />**PROJECT**  MyProject <br />**SERVICE GROUP**  Cluster of databases                                              	|
 | **Service Type**   	| Each service type can have a defined sets of metrics, which are explicit tests when we check                                                                                                                	| repository                                                                                                                  	|
@@ -40,9 +40,9 @@ I have a project (MyProject)  which offers an AAI and a Document Management Serv
 ….
 ```
   MyProject
-        |---AAI service                                         |---Document Management Service                  
-            |------aai.myproject.org                                       |------docu.myproject.org
-            |------aai1.myproject.org                                     |------database.myproject.org  
+        |---AAI service                            |---Document Management Service                  
+            |------aai.myproject.org                   |------docu.myproject.org
+            |------aai1.myproject.org                  |------database.myproject.org  
 ```
 
 ### Example 2: Monitoring the services of 1 or more Organizations - The topology: 
@@ -76,10 +76,11 @@ A visual representation of the above topology example can be represented from th
 ![](/img/infofeeds/topology.png) 
 
 
-Monitoring Service supports topology information from various sources like
-DPMT
-GOCDB
-CSV files (predefined format)
-Json files (predefined format)
-xml files  (predefined format)             
+Monitoring Service has a number of connectors for well-known configuration databases and sources like: 
+
+ - DPMT (Data Project Management Tool, that also manages topology and resources information)  
+ - GOCDB (Repository for storing and presenting topology and resources information) 
+ - CSV files (predefined format)
+ - Json files (predefined format)
+ - xml files  (predefined format)             
 
