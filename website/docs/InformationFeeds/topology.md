@@ -31,7 +31,7 @@ But before we start lets explain a few acronyms.
 | **Grouping**       	| A way to organize and group the services <br />**SITE**  An organization responsible for the service <br />**PROJECT**  When you offer services on behalf of a project <br /> **SERVICE GROUPS**  A group of related services 	| **SITE**  GRNET <br />**PROJECT**  MyProject <br />**SERVICE GROUP**  Cluster of databases                                              	|
 | **Service Type**   	| Each service type can have a defined sets of metrics, which are explicit tests when we check                                                                                                                	| repository                                                                                                                  	|
 | **Endpoint**       	| the combination of hostname and Service Type, defining where the service runs                                                                                                                               	| a repository at www.example-repository.com uses port 4333                                                                   	|
-| **Service actors** 	| the people responsible for the service operation                                                                                                                                                            	| Administrator : John Smith jsmith@grnet.gr <br />Site Owner: John Doe jDoe@grnet.gr <br />Security: George Papadopoulos jpapad@grnet.gr 	|
+| **Service actors** 	| the people responsible for the service operation                                                                                                                                                            	| Administrator : John Smith jsmith [AT] grnet.gr <br />Site Owner: John Doe jDoe [AT] grnet.gr <br />Security: George Papadopoulos jpapad@grnet.gr 	|
 
 ### Examples
 
@@ -42,7 +42,7 @@ Via a Topology the structure of  a Project , an Organization, a SITE, can be mon
 When we participate at a Project we offer a number of services. Based on this a project gathers the services to offer to a higher level and creates one more level of hierarchy. Project acts as a group, at the top level of the infrastructure definition.  
 
 ```
-**Project**   
+Project   
    |---Service or Group of services                 
              |--Service Endpoints 
 ```
@@ -50,7 +50,7 @@ When we participate at a Project we offer a number of services. Based on this a 
 As an example, we may say that we have a project (MyProject) which offers an AAI Service and a Document Management Service. The information about the topology includes the group  (MyProject) , the services (AAI service, Document Management Service) that combine the service endpoints (aai.myproject.org, aai1.myproject.org) and (docu.myproject.org, database.myproject.org) . The following image is trying to represent the hierarchy of the topology. 
 
 ```
-                                    **MyProject**
+                                    MyProject
         |---AAI service                            |---Document Management Service                  
             |------aai.myproject.org                   |------docu.myproject.org
             |------aai1.myproject.org                  |------database.myproject.org  
