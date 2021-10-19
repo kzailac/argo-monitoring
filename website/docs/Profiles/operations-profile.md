@@ -300,3 +300,13 @@ Below is the default operation profile used in JSON Format:
         }
 ```
 
+ ## Technical part
+ 
+The connection of the Operations profiles with the other components of ARGO
+
+They are:
+
+ - defined in POEM
+ - stored in ARGO Web API
+ - Used for the computations in the Analytics Engine
+
