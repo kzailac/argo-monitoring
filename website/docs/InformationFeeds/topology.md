@@ -9,11 +9,14 @@ Topology includes all the necessary information about how an infrastructure is s
 
 **Topology information includes :**
 * the monitored services
-* the way they are organized  (ex. in groups of sites, in groups of services, in groups of projects). Model different types of infrastructure architectures
+* the way they are organized  (ex. in groups of sites, in groups of services, in projects). The Service can model different types of infrastructure architectures
 * the service actors (owners, admins)
 
-Αlso, a monitored infrastructure (group) , can become part of a bigger structure, that gathers a sum of  groups. For example an ORGANIZATION can gather a sum of group of SITES and create on more level to the hierarchy.  The topology should also provide information about this bigger group , it's type and the group of sites it contains.
-We have to mention here that the levels of the topology is something that can be updated and depends on the requirements of each infrastructure.
+The ways the services are organized (sites, services, projects)  can be part of a bigger structure, that gathers a number of groups. 
+
+Organisations offer services that can be grouped based on the location (SITES) , or based on the project they are used by (PROJECT) . This can be one more level to the topology hierarchy. The topology should also provide information about this bigger group , it's type and the services it contains.
+
+The ARGO Monitoring Service allows the users to model their infrastructure by defining multiple level of groups, starting from groups of Service Endpoints and moving to higher level groups of groups. In this way it is easy to model different infrastructure architectures. We have to mention here that the levels of the topology is something that can be updated and depends on the requirements of each infrastructure.
 
 But before we start lets explain a few acronyms. 
 
