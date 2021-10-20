@@ -9,18 +9,19 @@ To succeed this,  availability/reliability rates need to be calculated on the ti
 
 * __Availability rate is useful to know , as it provides information of the time the monitored item is available for use. Availability is calculated as:__
 
- **Availability** = **UP** period / **KNOWN** period = **UP** period / (**Total** period – **UNKNOWN** period)
-**UP** period : The duration  the status of the monitored item is **OK** or **WARNING**
-**UNKNOWN** period: The duration  the status of the monitored item is **UNKNOWN**
-             **Total** period : The duration  of the monitoring (usually a day)
+ **Availability** = **UP** period / **KNOWN** period = **UP** period / (**Total** period – **UNKNOWN** period)<br />
+**UP** period : The duration  the status of the monitored item is **OK** or **WARNING**<br />
+**UNKNOWN** period: The duration  the status of the monitored item is **UNKNOWN**<br />
+             **Total** period : The duration  of the monitoring (usually a day)<br />
 
 * __Reliability rate is also useful to know , as it provides information about the quality of monitored item during the monitoring time, whereas it is reliable of usage or not. Reliability is calculated as:__
  
-**Reliability** = **UP** period / (**KNOWN** period – **Scheduled Downtime**) →  **UP** period (**Total** period – **UNKNOWN** period – **Scheduled Downtime**)
-**UP** period : The duration  the status of the monitored item is **OK** or **WARNING**
-**UNKNOWN** period: The duration the status of the monitored item is **UNKNOWN**
-**Scheduled Downtime** period: The duration  the status of the monitored item is defined to be **DOWN**                      
-**Total** period : The duration of the monitoring (usually a day)
+**Reliability** = **UP** period / (**KNOWN** period – **Scheduled Downtime**) →  <br />
+**UP** period (**Total** period – **UNKNOWN** period – **Scheduled Downtime**)<br />
+**UP** period : The duration  the status of the monitored item is **OK** or **WARNING**<br />
+**UNKNOWN** period: The duration the status of the monitored item is **UNKNOWN**<br />
+**Scheduled Downtime** period: The duration  the status of the monitored item is defined to be **DOWN**<br />
+**Total** period : The duration of the monitoring (usually a day)<br />
 
 
 
@@ -46,33 +47,32 @@ The Service owner has informed the monitoring service for a scheduled downtime f
 
 
 Calculating the duration for each status in seconds is: 
-Status      | Duration      
+
+Status      | Duration
 ------------- | -------------
-**Total seconds of a day:** | 86400 seconds /24h
-**OK:** | 18000 seconds /5h
-**CRITICAL:** | 32400 seconds /9h 
-**UNKNOWN:** | 21600 seconds /6h
-**DOWNTIME:** | 14400 seconds /4h
+**Total seconds of a day** | 86400 seconds /24h
+**OK** | 18000 seconds /5h
+**CRITICAL** | 32400 seconds /9h 
+**UNKNOWN** | 21600 seconds /6h
+**DOWNTIME** | 14400 seconds /4h
 
-**Availability = UP period / KNOWN period = UP period / (Total period – UNKNOWN period)**
-UP period =OK period +WARNING period=18000 seconds 
-UNKNOWN period: UNKNOWN period + MISSING period=21600 seconds
-Total period : 86400  seconds
+> **Availability = UP period / KNOWN period = UP period / (Total period – UNKNOWN period)**<br />
+UP period =OK period +WARNING period=18000 seconds <br />
+UNKNOWN period: UNKNOWN period + MISSING period=21600 seconds <br />
+Total period : 86400  seconds<br />
+Availabilty = 18000/(86400-21600)=0.2777 , and converting to the scale of 100 the **availability is 27.777** <br />
 
-Availabilty = 18000/(86400-21600)=0.2777 , and converting to the scale of 100 the **availability is 27.777** 
+> **Reliability = UP period / (KNOWN period – Scheduled Downtime) = UP period / (Total     period – UNKNOWN period – ScheduledDowntime)**<br />
+UP period =OK period +WARNING period=18000 seconds <br />
+UNKNOWN period: UNKNOWN period+MISSING period=21600 seconds<br />
+ScheduledDowntime period: 14400 seconds<br />
+Total period : 86400 seconds<br />
+Reliability=18000/(86400-21600-14400)=0.3571 , and converting to the scale of 100 the **reliability is 35.771**<br />
 
-**Reliability = UP period / (KNOWN period – Scheduled Downtime) = UP period / (Total     period – UNKNOWN period – ScheduledDowntime)**
-UP period =OK period +WARNING period=18000 seconds 
-UNKNOWN period: UNKNOWN period+MISSING period=21600 seconds
-ScheduledDowntime period: 14400 seconds
-Total period : 86400 seconds
-
-Reliability=18000/(86400-21600-14400)=0.3571 , and converting to the scale of 100 the **reliability is 35.771**
-
-ARGO Monitoring Service also calculates results of up period, downtime period , unknown period as:
- **up = up period / total period**=18000/86400 =0.20833
- **unknown=unknown period +missing period/  total period**=21600/86400=0.25
- **downtime= downtime period/total period**=14400/86400=0.16667
+ARGO Monitoring Service also calculates results of up period, downtime period , unknown period as:<br />
+ > **up = up period / total period**=18000/86400 =0.20833 <br />
+ **unknown=unknown period +missing period/  total period**=21600/86400=0.25 <br />
+ **downtime= downtime period/total period**=14400/86400=0.16667<br />
 
 
 
