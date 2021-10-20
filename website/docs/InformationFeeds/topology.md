@@ -5,23 +5,15 @@ title: Topology
 
 One of the main sources of truth used in the Monitoring Service is the topology. It helps to discover and map relationships between services / resources. Via the topology the owner may have in-depth visibility into the infrastructure, by enabling the Monitoring Service to categorize, classify, and finally monitor the services in it. 
 
-Topology includes all the necessary information about how an infrastructure is structured and organized.  ARGO Monitoring Service via the connectors (components used to connect to well known Configuration Databases (DPMT, GOCDB, csv files, json) retrieves information about the infrastructure, the hierarchy of the services that will be monitored, and  the service owners. 
+Topology includes all the necessary information about how an infrastructure is structured and organized.  ARGO Monitoring Service via the connectors (components used to connect to well known Configuration Databases (DPMT, GOCDB, csv files, json) retrieves information about the infrastructure, the hierarchy of the services that will be monitored, and  the service owners.
 
-
-
-**Topology information includes :** 
-
-* the monitored services  
+**Topology information includes :**
+* the monitored services
 * the way they are organized  (ex. in groups of sites, in groups of services, in groups of projects). Model different types of infrastructure architectures
-* the service actors (owners, admins) 
+* the service actors (owners, admins)
 
-The monitored infrastructure (group) , such as SITE or a PROJECT, can be part of a higher level of hierarchy, gathered with other groups. The new level of hierarchy contains information about:
-
-* group , which is the super group of the top level 
-* type , the type of the new level of hierarchy (e.x project) 
-* subgroup, the group endpoint that participates to the super group
-
-We have to mention here that the levels of the topology is somehting that can be updated and depends on the requirements of each infrastructure. 
+Αlso, a monitored infrastructure (group) , can become part of a bigger structure, that gathers a sum of  groups. For example an ORGANIZATION can gather a sum of group of SITES and create on more level to the hierarchy.  The topology should also provide information about this bigger group , it's type and the group of sites it contains.
+We have to mention here that the levels of the topology is something that can be updated and depends on the requirements of each infrastructure.
 
 But before we start lets explain a few acronyms. 
 
