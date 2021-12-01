@@ -158,7 +158,7 @@ More specifically:
 
 | Categories of personal data collected | Time and place of retention of personal data |
 | --- | --- |
-| IP address, Data from website navigation through Cookies | 18 months (log retention) |
+| <ul><li>IP address</li><li>Data from website navigation through Cookies</li></ul> | 18 months (log retention) |
 | Unique User Identifier, User Name, Name, Surname, e-mail address, Last Login, Distinguished Name, Display Name | 18 months (db) for the Unique user Identifier , User Name, Name, Surname, e-mail address, Last Login, Distinguished Name, Display Name will be deleted on user request |
 
 H. Privacy and Security of Information:
