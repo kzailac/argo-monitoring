@@ -39,7 +39,7 @@ For the purposes of this Privacy Statement, the terms "processor", "controller",
 In addition, for the purposes of the present, the following definitions shall also apply:
 
 -   "Website" -- the website accessible via domain name argo.egi.eu including the entirety of the web pages thereof.
--   " Argo Service Monitoring Service" - [https://argo.egi.eu](https://argo.egi.eu/)
+-   " Argo Service Monitoring Service" - [web-ui-url](#)
 -   "User"- the Argo Service Monitoring online service user, whom the data refers to, whose identity is known or may be verified, namely it may be directly or indirectly determined.
 
 ---
@@ -51,7 +51,7 @@ i. GRNET SA-- as processor -- processes its "users" personal data as referred to
 
 -   Authentication of Argo Service Monitoring service users
 
--   "Users" authentication is carried out through the login service [EGI Check-in](https://www.egi.eu/services/check-in/ "EGI Checkin")
+-   "Users" authentication is carried out through the login service [Feredated AAI](#)
 
 -   Providing the Argo Service Monitoring service
 
@@ -72,7 +72,7 @@ B. Categories of personal data processed:
 
 i. For the Authentication of Argo Service Monitoring "users"
 
-The authentication of the service "users" is carried out through the [EGI Check-in](https://www.egi.eu/services/check-in/ "EGI Checkin") service , the local login of individual components. For the sole purpose of the authentication of the service "users", GRNET SA collects through the aforementioned authentication procedure, and processes -- as processor- the following personal data per component:
+The authentication of the service "users" is carried out through the [Feredated AAI](#) service , the local login of individual components. For the sole purpose of the authentication of the service "users", GRNET SA collects through the aforementioned authentication procedure, and processes -- as processor- the following personal data per component:
 
 -   ARGO MONITORING - WEB UI
 
@@ -161,24 +161,8 @@ More specifically:
 
 | Categories of personal data collected | Time and place of retention of personal data |
 | --- | --- |
-|
-
--   IP address
--   Data from website navigation through Cookies
-
- | 18 months (log retention) |
-|
-
--   Unique User Identifier,
--   User Name
--   Name
--   Surname
--   e-mail address
--   Last Login
--   Distinguished Name
--   Display Name
-
- | 18 months (db) for the Unique user Identifier , User Name, Name, Surname, e-mail address, Last Login, Distinguished Name, Display Name will be deleted on user request |
+| IP address, Data from website navigation through Cookies | 18 months (log retention) |
+| Unique User Identifier, User Name, Name, Surname, e-mail address, Last Login, Distinguished Name, Display Name | 18 months (db) for the Unique user Identifier , User Name, Name, Surname, e-mail address, Last Login, Distinguished Name, Display Name will be deleted on user request |
 
 H. Privacy and Security of Information:
 ---------------------------------------
@@ -187,8 +171,10 @@ The processing of personal data by GRNET SA is performed in a manner that ensure
 
 -   Access to technical log data is restricted and can only be accessed in a secure way by the Argo Service Monitoring service staff.
 -   When accessing the Argo Service Monitoring service adequate security controls are in place to keep your personal data safe in accordance with the classification of the personal data we have collected from you.
--   We use encryption (HTTPS) to keep data private while in transit. Data sent using HTTPS is secured via Transport Layer Security protocol (TLS), which provides a) Encryption---encrypting the exchanged data to keep it secure from droppers. b) Data integrity---data cannot be modified or corrupted during transfer, intentionally or otherwise, without being detected. c) Authentication---proves that your users communicate with the intended website.
--   The implementation of the Argo Service Monitoring service ensures that no unauthorized user can log into the service. An authorised user means a service user, who has an active account with the [EGI Check-in](https://www.egi.eu/services/check-in/ "EGI Checkin") service, having passed the authentication process mentioned above.
+-   We use encryption (HTTPS) to keep data private while in transit. Data sent using HTTPS is secured via Transport Layer Security protocol (TLS), which provides   1. Encryption---encrypting the exchanged data to keep it secure from droppers. 
+  2. Data integrity---data cannot be modified or corrupted during transfer, intentionally or otherwise, without being detected. 
+  3. Authentication---proves that your users communicate with the intended website.
+-   The implementation of the Argo Service Monitoring service ensures that no unauthorized user can log into the service. An authorised user means a service user, who has an active account with the [Federated AAI](#) service, having passed the authentication process mentioned above.
 -   We review our information collection, storage, and processing practices, including physical security measures, to prevent unauthorized access to our systems
 
 Although we follow best security practices to ensure your personal data remains secure, there is no absolute guarantee of security when using services online. While we strive to protect your personal data, you acknowledge that:
