@@ -38,7 +38,7 @@ For the purposes of this Privacy Statement, the terms "processor", "controller",
 
 In addition, for the purposes of the present, the following definitions shall also apply:
 
--   "Website" -- the website accessible via domain name argo.egi.eu including the entirety of the web pages thereof.
+-   "Website" -- the website accessible via domain name `web-ui-url` including the entirety of the web pages thereof.
 -   " Argo Service Monitoring Service" - [web-ui-url](#)
 -   "User"- the Argo Service Monitoring online service user, whom the data refers to, whose identity is known or may be verified, namely it may be directly or indirectly determined.
 
