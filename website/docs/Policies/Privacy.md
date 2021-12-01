@@ -6,20 +6,24 @@ title: Privacy Policy
 **Controller details**
 
 Α public limited company (societe anonyme) under the corporate name "National Infrastructures for Technology and Research S.A." and the distinctive title "GRNET S.A."
+
 ---
 
 
 **Controller's Contact Details**
+
 dpo at grnet.gr
 
 ---
 
 **Processor Details**
+
 ARGO Support Team
 
 ---
 
 **Processor's Contact Details**
+
 argo at grnet.gr
 
 ----
