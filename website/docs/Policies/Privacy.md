@@ -180,7 +180,7 @@ Although we follow best security practices to ensure your personal data remains 
 -   There are security and privacy limitations on the internet which are beyond our control and can have a negative impact on the confidentiality, integrity and availability of the information.
 -   We cannot be held accountable for activity that results from your own neglect to safeguard the security of your login credentials and equipment which results in a loss of your personal data. If you feel this not enough, then please do not provide any personal data.
 
-Your personal data will be protected according to [the Code of Conduct for Service Providers](https://geant3plus.archive.geant.net/Documents/GEANT_DP_CoC_ver1.0.pdf "the Code  of  Conduct  for Service  Providers") , a common standard for the research and higher education sector to protect your privacy.
+Your personal data will be protected according to [the Code of Conduct for Service Providers](http://www.geant.net/uri/dataprotection-code-of-conduct/v1  "the Code  of  Conduct  for Service  Providers") , a common standard for the research and higher education sector to protect your privacy.
 
 I. Contact:
 -----------
