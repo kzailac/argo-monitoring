@@ -172,9 +172,9 @@ The processing of personal data by GRNET SA is performed in a manner that ensure
 -   Access to technical log data is restricted and can only be accessed in a secure way by the Argo Service Monitoring service staff.
 -   When accessing the Argo Service Monitoring service adequate security controls are in place to keep your personal data safe in accordance with the classification of the personal data we have collected from you.
 -   We use encryption (HTTPS) to keep data private while in transit. Data sent using HTTPS is secured via Transport Layer Security protocol (TLS), which provides:
-  - 1. Encryption---encrypting the exchanged data to keep it secure from droppers. 
-  - 2. Data integrity---data cannot be modified or corrupted during transfer, intentionally or otherwise, without being detected. 
-  - 3. Authentication---proves that your users communicate with the intended website.
+    1. Encryption---encrypting the exchanged data to keep it secure from droppers. 
+    2. Data integrity---data cannot be modified or corrupted during transfer, intentionally or otherwise, without being detected. 
+    3. Authentication---proves that your users communicate with the intended website.
 -   The implementation of the Argo Service Monitoring service ensures that no unauthorized user can log into the service. An authorised user means a service user, who has an active account with the [Federated AAI](#) service, having passed the authentication process mentioned above.
 -   We review our information collection, storage, and processing practices, including physical security measures, to prevent unauthorized access to our systems
 
