@@ -17,7 +17,7 @@ module.exports = {
       title: 'Argo Monitoring',
       logo: {
         alt: 'Argo Logo',
-        src: 'img/argo.png',
+        src: 'img/argo_icon.svg',
       },
       items: [
         {
